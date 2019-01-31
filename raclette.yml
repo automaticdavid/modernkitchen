@@ -1,0 +1,10 @@
+---
+- name: Raclette
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - name: Raclette
+      debug: 
+        msg: "Adding Raclette"
