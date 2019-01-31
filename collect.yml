@@ -1,0 +1,10 @@
+---
+- name: Collect
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - name: Collect
+      debug:
+        msg: "Collect"
