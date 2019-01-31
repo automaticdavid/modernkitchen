@@ -1,0 +1,10 @@
+---
+- name: Onions
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - name: Onions
+      debug: 
+        msg: "Adding Onions"
