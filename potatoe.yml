@@ -1,0 +1,10 @@
+---
+- name: Potatoes
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - name: Potatoes
+      debug: 
+        msg: "Adding Potatoes"
