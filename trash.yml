@@ -1,0 +1,10 @@
+---
+- name: Trash
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - name: Trash
+      debug: 
+        msg: "Trash"
