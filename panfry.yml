@@ -1,0 +1,10 @@
+---
+- name: Pan Fry
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - name: Pan Fry
+      debug: 
+        msg: "Pan Fry"
