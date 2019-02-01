@@ -1,0 +1,29 @@
+---
+- name: Let's make a Tartiflette
+  hosts: localhost
+  connection: local
+
+  vars: 
+    vegetables:
+      onions: 2
+      potatoes: 5
+    cheese: "raclette"
+
+  tasks:
+
+    - name: Adding Vegetables
+      debug: 
+        msg: "Adding {{ item.key}} {{ item.value}}"
+      with_items: "{{ vegetables }}"
+        
+    - name: Adding Cheese
+      debug: 
+        msg: "Adding {{ cheese }}"
+        
+    - name: Make Tartiflette 
+      vars:
+        tartiflette:
+          {{ vegetables }}
+          {{ cheese }}
+      debug: 
+        var: "{{ tartiflette | to_json }}"
