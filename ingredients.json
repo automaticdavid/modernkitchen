@@ -1,0 +1,11 @@
+{
+ "ingredients": 
+    {
+      "vegetables":
+        {
+          "onions": 2,
+          "potatoes": 5
+        },
+      "cheese": "raclette"
+    }
+}

@@ -2,28 +2,26 @@
 - name: Let's make a Tartiflette
   hosts: localhost
   connection: local
+  gather_facts: no
 
   vars: 
-    vegetables:
-      onions: 2
-      potatoes: 5
-    cheese: "raclette"
+    ingredients:
+      vegetables:
+        onions: 2
+        potatoes: 5
+      cheese: "raclette"
 
   tasks:
 
     - name: Adding Vegetables
       debug: 
-        msg: "Adding {{ item.key}} {{ item.value}}"
-      with_items: "{{ vegetables }}"
+        msg: "Adding {{ item.value }} {{ item.key }}"
+      with_dict: "{{ ingredients.vegetables }}"
         
     - name: Adding Cheese
       debug: 
-        msg: "Adding {{ cheese }}"
+        msg: "Adding {{ ingredients.cheese }}"
         
     - name: Make Tartiflette 
-      vars:
-        tartiflette:
-          {{ vegetables }}
-          {{ cheese }}
       debug: 
-        var: "{{ tartiflette | to_json }}"
+        var:  ingredients
