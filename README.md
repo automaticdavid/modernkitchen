@@ -246,7 +246,7 @@ id       name       inventory project    playbook
 == ================ ========= ======= =============== 
 ```
 
-On peut alors passer un json permettant de surcharger les variables du playbook:
+On peut alors passer un json au POST REST permettant de surcharger les variables du playbook:
 
 ```
 cat ingredients.json 
