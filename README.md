@@ -1,4 +1,4 @@
-# Quelques exemple de requetes REST pour Ansible Tower
+# Quelques exemples de requetes REST pour Ansible Tower
 
 Dans cet exemple nous avons un playbook: [tartiflette.yml](tartiflette.yml) qui utilise la variable "ingredients" : 
 
