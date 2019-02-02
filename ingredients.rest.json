@@ -1,0 +1,11 @@
+{
+  "extra_vars": {
+    "ingredients": {
+      "vegetables": {
+         "onions": 5,
+         "potatoes": 15
+      },
+      "cheese": "raclette"
+    }
+  }
+}

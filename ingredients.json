@@ -1,11 +1,9 @@
-{
- "ingredients": 
+"ingredients":
     {
-      "vegetables":
-        {
-          "onions": 2,
-          "potatoes": 5
-        },
-      "cheese": "raclette"
+        "vegetables":
+            {
+                "onions": 5,
+                "potatoes": 15
+            },
+        "cheese": "raclette"
     }
-}
