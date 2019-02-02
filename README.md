@@ -11,7 +11,7 @@ Dans cet exemple nous avons un playbook: [tartiflette.yml](tartiflette.yml) qui 
 ```
 
 Ce playbook est utilisé dans un projet et un job template Tower.
-La definition du projet et du template peut egalement se faire en REST, mais dans un premier temps on peut le faire avec le GUI ou avec toweri-cli: 
+La definition du projet et du template peut egalement se faire en REST, mais dans un premier temps on peut le faire avec le GUI ou avec tower-cli: 
 
 ```
 tower-cli project create --name "Modern Kitchen" --scm-type git --scm-url https://github.com/automaticdavid/modernkitchen.git
