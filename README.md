@@ -48,7 +48,7 @@ On peut declencher l'execution de ce template avec un POST:
 curl --silent --user admin:password -X POST "https://tower.example.com/api/v2/job_templates/Make Tartiflette/launch/" 
 ```
 
-On obtient un json qui en partiiculier contient le job ID: 
+On obtient un json qui en particulier contient le job ID: 
 
 ```
 {
