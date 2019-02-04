@@ -249,16 +249,18 @@ id       name       inventory project    playbook
 On peut alors passer un json au POST REST permettant de surcharger les variables du playbook:
 
 ```
-cat ingredients.json 
-"ingredients":
-    {
-        "vegetables":
-            {
-                "onions": 5,
-                "potatoes": 15
-            },
-        "cheese": "raclette"
+cat ingredients.rest.json 
+{
+  "extra_vars": {
+    "ingredients": {
+      "vegetables": {
+         "onions": 5,
+         "potatoes": 15
+      },
+      "cheese": "raclette"
     }
+  }
+}
 
 curl --silent --user admin:password -X POST -H "Content-Type: application/json" -d @ingredients.rest.json "https://tower.example.com/api/v2/job_templates/Make Tartiflette/launch/"
 
