@@ -8,6 +8,3 @@
     - name: Collect
       debug:
         msg: "Collect"
-    - name: Make Tartiflette 
-      debug: 
-        var: ingredients
