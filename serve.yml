@@ -1,0 +1,11 @@
+
+---
+- name: Serve all these delicious Tartiflettes
+  hosts: localhost
+  connection: local
+
+  tasks:
+
+    - name: Serve Tartiflettes
+      debug: 
+        msg: "Nothing beats Tartiflette in the winter"
