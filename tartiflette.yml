@@ -33,7 +33,6 @@
         validate_certs: no
         body_format: json
         body: 
-          event: 
             modern_kitchen: "{{ ingredients }}"
         headers: 
           Authorization: Splunk "{{ splunk_token }}"
