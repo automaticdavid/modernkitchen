@@ -29,7 +29,7 @@
     - name: Splunk FW
       uri:
         url: "{{ splunk_hec }}"
-        method: POST
+        method: GET
         validate_certs: no
         body_format: json
         body: 
