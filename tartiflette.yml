@@ -25,3 +25,14 @@
     - name: Make Tartiflette 
       debug: 
         var:  ingredients
+        
+    - name: Splunk FW
+      uri:
+        url: "{{ splunk_hec }}"
+        method: POST
+        body_format: json
+        body: 
+          event: 
+            modern_kitchen: "{{ ingredients }}"
+        headers: 
+          Authorization: Splunk "{{ splunk_token }}"
