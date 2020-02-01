@@ -30,6 +30,7 @@
       uri:
         url: "{{ splunk_hec }}"
         method: POST
+        validate_certs: no
         body_format: json
         body: 
           event: 
