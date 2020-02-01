@@ -35,4 +35,4 @@
         body: 
             modern_kitchen: "{{ ingredients }}"
         headers: 
-          Authorization: Splunk "{{ splunk_token }}"
+          Authorization: "Splunk {{ splunk_token }}"
