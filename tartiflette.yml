@@ -29,10 +29,11 @@
     - name: Splunk FW
       uri:
         url: "{{ splunk_hec }}"
-        method: GET
+        method: POST
         validate_certs: no
         body_format: json
         body: 
-            modern_kitchen: "{{ ingredients }}"
+            event:
+              modern_kitchen: "{{ ingredients }}"
         headers: 
           Authorization: "Splunk {{ splunk_token }}"
