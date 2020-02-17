@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  
+  tasks:
+ 
+    - name: Display some vars
+      debug:
+        var: cheese
