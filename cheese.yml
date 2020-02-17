@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  
+  tasks:
+
+    - name: Set some vars
+      set_stats:
+        data:
+          cheese: brie
