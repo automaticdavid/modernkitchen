@@ -1,6 +1,6 @@
 ---
 - name: Let's make a Tartiflette
-  hosts: localhost
+  hosts: all
   connection: local
   gather_facts: no
 
