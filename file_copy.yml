@@ -9,5 +9,5 @@
         dest: /foo.txt
     - name: fetch a file from sowhere
       fetch: 
-        src: foo.txt
+        src: /bar.txt
         dest: /myfiles/bar.txt
