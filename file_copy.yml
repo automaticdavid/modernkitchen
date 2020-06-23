@@ -1,6 +1,5 @@
 ---
 - name: where does it get that file to ? 
-  become: yes
   hosts: all
   tasks: 
     - name: copy a file from sowhere
