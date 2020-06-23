@@ -10,4 +10,4 @@
     - name: fetch a file from sowhere
       fetch: 
         src: /bar.txt
-        dest: /myfiles/bar.txt
+        dest: /myfiles/
