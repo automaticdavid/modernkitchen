@@ -7,3 +7,7 @@
       copy: 
         src: /myfiles/foo.txt
         dest: /foo.txt
+    - name: fetch a file from sowhere
+      fetch: 
+        src: foo.txt
+        dest: /myfiles/bar.txt
